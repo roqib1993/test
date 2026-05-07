@@ -1,0 +1,24 @@
+{
+  "name": "fegt-inspection-app",
+  "version": "1.0.0",
+  "description": "FEGT Weekly Inspection Temperature Reading Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.3",
+    "pdfkit": "^0.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "concurrently": "^8.0.1"
+  }
+}
